@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bengkel TKJ - Solusi Komputer & Jaringan</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        header {
+            background: #071a35;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            color: #00c8ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00c8ff;
+        }
+
+        .hero {
+            min-height: 450px;
+            background: linear-gradient(120deg, #071a35, #075b91);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero span {
+            color: #00d4ff;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            background: #00c8ff;
+            color: #071a35;
+            padding: 13px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        section {
+            padding: 65px 8%;
+        }
+
+        .judul {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 35px;
+            color: #071a35;
+        }
+
+        .tentang {
+            text-align: center;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: white;
+            padding: 28px 20px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #00000012;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+        }
+
+        .card .icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #075b91;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .harga {
+            color: #0087bd;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .kontak {
+            background: #071a35;
+            color: white;
+        }
+
+        .kontak .judul {
+            color: white;
+        }
+
+        form {
+            max-width: 550px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 13px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 7px;
+            font-size: 15px;
+        }
+
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        form button {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        footer {
+            background: #041126;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media(max-width: 600px) {
+            header {
+                justify-content: center;
+                gap: 15px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                font-size: 13px;
+                margin: 5px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h2>🔧 BENGKEL TKJ</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#layanan">Layanan</a>
+            <a href="#harga">Harga</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- HALAMAN UTAMA -->
+    <div class="hero" id="home">
+        <h1>SELAMAT DATANG DI <span>BENGKEL TKJ</span></h1>
+        <p>Solusi Terbaik Servis Komputer dan Jaringan Anda</p>
+        <a href="#layanan" class="btn">Lihat Layanan</a>
+    </div>
+
+    <!-- TENTANG -->
+    <section id="tentang">
+        <h2 class="judul">Tentang Bengkel TKJ</h2>
+        <div class="tentang">
+            <p>
+                Bengkel TKJ merupakan tempat pelayanan jasa
+                perbaikan komputer, laptop, instalasi software,
+                perawatan perangkat keras, serta instalasi jaringan.
+                Kami memberikan pelayanan terbaik dengan harga
+                terjangkau dan kualitas pekerjaan yang maksimal.
+            </p>
+        </div>
+    </section>
+
+    <!-- LAYANAN -->
+    <section id="layanan">
+        <h2 class="judul">Layanan Kami</h2>
+
+        <div class="container">
+            <div class="card">
+                <div class="icon">💻</div>
+                <h3>Servis Laptop</h3>
+                <p>Perbaikan laptop rusak, lemot, dan mati total.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🖥️</div>
+                <h3>Servis Komputer</h3>
+                <p>Perbaikan PC, upgrade hardware, dan perawatan komputer.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🌐</div>
+                <h3>Instalasi Jaringan</h3>
+                <p>Pemasangan LAN, konfigurasi router, dan jaringan WiFi.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">⚙️</div>
+                <h3>Instalasi Software</h3>
+                <p>Instalasi Windows, driver, aplikasi, dan antivirus.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HARGA -->
+    <section id="harga">
+        <h2 class="judul">Daftar Harga Layanan</h2>
+
+        <div class="container">
+            <div class="card">
+                <h3>Instal Ulang Windows</h3>
+                <p>Instalasi sistem operasi komputer/laptop.</p>
+                <div class="harga">Rp75.000</div>
+            </div>
+
+            <div class="card">
+                <h3>Servis Komputer</h3>
+                <p>Pengecekan dan perbaikan komputer.</p>
+                <div class="harga">Rp50.000</div>
+            </div>
+
+            <div class="card">
+                <h3>Instalasi Software</h3>
+                <p>Pemasangan aplikasi dan driver.</p>
+                <div class="harga">Rp25.000</div>
+            </div>
+
+            <div class="card">
+                <h3>Instalasi LAN</h3>
+                <p>Pemasangan dan konfigurasi jaringan.</p>
+                <div class="harga">Rp100.000</div>
+            </div>
+        </div>
+        <p style="text-align:center; margin-top:20px; color:#666;">
+            *Harga di atas merupakan contoh dan dapat disesuaikan.
+        </p>
+    </section>
+
+    <!-- KONTAK -->
+    <section class="kontak" id="kontak">
+        <h2 class="judul">Pesan Layanan Kami</h2>
+
+        <form id="formServis">
+            <input type="text" id="nama"
+                placeholder="Nama Lengkap" required>
+
+            <input type="tel" id="telepon"
+                placeholder="Nomor WhatsApp" required>
+
+            <select id="layananPilih" required>
+                <option value="">Pilih Layanan</option>
+                <option>Servis Laptop</option>
+                <option>Servis Komputer</option>
+                <option>Instalasi Jaringan</option>
+                <option>Instalasi Software</option>
+            </select>
+
+            <textarea id="pesan"
+                placeholder="Ceritakan kerusakan atau kebutuhan Anda..."
+                required></textarea>
+
+            <button type="submit" class="btn">
+                Kirim Pesanan WhatsApp
+            </button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Bengkel TKJ | Teknik Komputer dan Jaringan</p>
+        <p>Solusi Komputer dan Jaringan Terpercaya</p>
+    </footer>
+
+    <script>
+        document.getElementById("formServis")
+        .addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            const nama = document.getElementById("nama").value;
+            const telepon = document.getElementById("telepon").value;
+            const layanan = document.getElementById("layananPilih").value;
+            const pesan = document.getElementById("pesan").value;
+
+            // Ganti dengan nomor WhatsApp bengkel Anda
+            const nomorAdmin = "6281234567890";
+
+            const isiPesan =
+                "Halo Bengkel TKJ!%0A%0A" +
+                "Nama: " + encodeURIComponent(nama) + "%0A" +
+                "No HP: " + encodeURIComponent(telepon) + "%0A" +
+                "Layanan: " + encodeURIComponent(layanan) + "%0A" +
+                "Keluhan: " + encodeURIComponent(pesan);
+
+            window.open(
+                "https://wa.me/" + nomorAdmin + "?text=" + isiPesan,
+                "_blank"
+            );
+        });
+    </script>
+
+</body>
+</html>
